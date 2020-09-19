@@ -10,6 +10,7 @@ const NavMenu = styled.ul`
   width: 100%;
   background-color: #fabea7;
   transition: ${(props) => (props.alter ? "0" : "all .4s ease")};
+  z-index: 100;
 
   @media (min-width: 992px) {
     display: flex;

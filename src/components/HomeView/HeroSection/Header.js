@@ -7,10 +7,10 @@ const StyledHeader = styled.h1`
   text-transform: uppercase;
 `;
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
-      <StyledHeader>Zbuduj swoją wymarzoną sylwetkę</StyledHeader>
+      <StyledHeader>{props.headerText}</StyledHeader>
     </>
   );
 };

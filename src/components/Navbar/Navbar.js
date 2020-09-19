@@ -10,10 +10,13 @@ const NavItems = styled.nav`
   justify-content: space-between;
   width: 100%;
   background-color: #fabea7;
+  height: 45px;
+  /* overflow-x: hidden; */
 `;
 
 const NavImg = styled.img`
-  height: 45px;
+  height: 100%;
+  width: 180px;
   margin-left: 3vw;
 `;
 

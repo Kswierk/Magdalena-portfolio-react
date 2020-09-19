@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../../Button/Button";
 import KacperBcg from "../../../assets/img/kacperbcg.jpg";
-import Header from "../Header/Header";
+import Header from "./Header";
 
 const HeroImg = styled.div`
   background: url(${KacperBcg}) no-repeat center center fixed;
@@ -10,7 +10,7 @@ const HeroImg = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: calc(100vh - 49px);
+  height: calc(100vh - 45px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@ const HeroImg = styled.div`
 const HeroSection = () => {
   return (
     <HeroImg>
-      <Header />
+      <Header headerText={"Zbuduj swoją wymarzoną sylwetkę"} />
       <Button btntext="bezpłatne konsultacje" />
     </HeroImg>
   );
