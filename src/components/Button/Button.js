@@ -5,7 +5,8 @@ import styled from "styled-components";
 
 const StandardBtn = styled.button`
   position: relative;
-  background-color: #fbe2e5;
+  background-color: #f56a79;
+  color: white;
   display: block;
   outline: none;
   border: none;
@@ -26,7 +27,7 @@ const StyledLink = styled(Link)`
 const Button = (props) => {
   return (
     <div>
-      <StyledLink to={"contact"}>
+      <StyledLink to={props.linkto}>
         <StandardBtn>{props.btntext}</StandardBtn>
       </StyledLink>
     </div>

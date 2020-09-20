@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import { data } from "./data";
 import SliderCard from "./SliderCard";
-import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionHeader from "../../SectionHeader/SectionHeader";
 import { QuoteLeft } from "@styled-icons/boxicons-solid/QuoteLeft";
 
 const Wrapper = styled.div`
@@ -36,21 +36,22 @@ const PositionedQuote = styled(QuoteLeft)`
 class SlideView extends Component {
   render() {
     const settings = {
+      mobileFirst: true,
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 1000,
       slidesToShow: 3,
       slidesToScroll: 2,
       initialSlide: 0,
       adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            infinite: true,
-            dots: true,
           },
         },
         {
@@ -58,7 +59,6 @@ class SlideView extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 1,
           },
         },
       ],

@@ -1,6 +1,6 @@
 import React from "react";
 
-import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionHeader from "../../SectionHeader/SectionHeader";
 import BriefText from "./BriefText";
 import BriefIcons from "./BriefIcons";
 import styled from "styled-components";

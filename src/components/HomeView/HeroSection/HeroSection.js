@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <HeroImg>
       <Header headerText={"Zbuduj swoją wymarzoną sylwetkę"} />
-      <Button btntext="bezpłatne konsultacje" />
+      <Button linkto="contact" btntext="bezpłatne konsultacje" />
     </HeroImg>
   );
 };

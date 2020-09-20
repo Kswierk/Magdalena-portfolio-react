@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionHeader from "../../SectionHeader/SectionHeader";
 import HowIcons from "./HowIcons";
 
 const howSection = () => (
