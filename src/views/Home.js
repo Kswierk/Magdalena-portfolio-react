@@ -4,6 +4,7 @@ import Brief from "../components/HomeView/Brief/Brief";
 import HowSection from "../components/HomeView/HowSection/HowSection";
 import SlideView from "../components/HomeView/SlideView/SlideView";
 import ContactUs from "../components/ContactForm/ContactForm";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HowSection />
       <SlideView />
       <ContactUs />
+      <Footer />
     </>
   );
 };
