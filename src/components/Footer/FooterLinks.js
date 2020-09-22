@@ -6,23 +6,15 @@ import styled from "styled-components";
 const NavLi = styled.li`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
   padding: 5px auto;
   transition: 0.3s;
-
-  :hover {
-    background-color: #fbe2e5;
-    color: #767c77;
-  }
+  color: #f5f5f5;
+  margin: 10px auto;
 
   @media (min-width: 992px) {
     flex-direction: row;
-    margin: 0 30px;
-
-    :hover {
-      background-color: #fabea7;
-      color: #767c77;
-    }
   }
 `;
 
@@ -33,9 +25,13 @@ const StyledLink = styled(Link)`
   transition: all ease 0.3s;
 `;
 
+const Styledh2 = styled.h2`
+  font-weight: 400;
+`;
+
 const FooterLinks = () => (
   <>
-    <h2>Strony</h2>
+    <Styledh2>Strony</Styledh2>
     <StyledLink to="/">
       <NavLi>{menuItems[0]}</NavLi>
     </StyledLink>

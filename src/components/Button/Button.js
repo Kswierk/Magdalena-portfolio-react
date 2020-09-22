@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const StandardBtn = styled.button`
   position: relative;
-  background-color: #f56a79;
+  background-color: #fc5185;
   color: white;
   display: block;
   outline: none;
@@ -15,6 +15,16 @@ const StandardBtn = styled.button`
   cursor: pointer;
   margin-top: 50px;
   text-transform: uppercase;
+  font-weight: 500;
+
+  @media (min-width: 1024px) {
+    padding: 1.5rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  @media (min-width: 2560px) {
+    padding: 2.5rem 4.5rem;
+    font-size: 1.4rem;
+  }
 `;
 
 const StyledLink = styled(Link)`

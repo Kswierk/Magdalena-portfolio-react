@@ -6,9 +6,9 @@ import { menuItems } from "./menuItems";
 const NavMenu = styled.ul`
   position: absolute;
   left: ${(props) => (props.alter ? "-100%" : "0")};
-  top: 45px;
+  top: 80px;
   width: 100%;
-  background-color: #fabea7;
+  background-color: #f5f5f5;
   transition: ${(props) => (props.alter ? "0" : "all .4s ease")};
   z-index: 100;
 
@@ -30,20 +30,16 @@ const NavLi = styled.li`
   height: 100%;
   padding: 15px 0;
   transition: 0.3s;
-
-  :hover {
-    background-color: #fbe2e5;
-    color: #767c77;
-  }
+  color: #fc5185;
+  text-transform: uppercase;
 
   @media (min-width: 992px) {
     flex-direction: row;
     margin: 0 30px;
+  }
 
-    :hover {
-      background-color: #fabea7;
-      color: #767c77;
-    }
+  @media (min-width: 2560px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -70,7 +66,7 @@ const NavBurgerLine = styled.div`
   height: 3px;
   width: 28px;
   margin: 5px;
-  background-color: black;
+  background-color: #fc5185;
   transition: 0.3s;
 
   :nth-of-type(1) {

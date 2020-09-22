@@ -8,11 +8,16 @@ const StyledHeader = styled.h2`
 
   :after {
     content: "";
-    height: 3px;
+    height: 2px;
+    border-radius: 4px;
     margin: 15px 0 50px 0;
     width: 100px;
-    background: #fabea7;
+    background: #fc5185;
     display: block;
+  }
+
+  @media (min-width: 2560px) {
+    font-size: 3rem;
   }
 `;
 

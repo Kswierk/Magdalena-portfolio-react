@@ -2,11 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const Wraper = styled.div`
-  margin: 0 10px;
   background-color: #fff;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 50px;
+
+  @media (min-width: 1024px) {
+    padding: 20px;
+    margin-bottom: 0;
+  }
 `;
 
 const Header = styled.h3`
@@ -23,17 +28,20 @@ const TextHeader = styled.h4`
 `;
 
 const Email = styled.p`
-  color: #f56a79;
-  font-weight: 400;
+  margin-bottom: 15px;
+`;
+
+const Pargaraph = styled.p`
+  margin-bottom: 35px;
 `;
 
 const ContactDetails = () => (
   <Wraper>
-    <Header>Skontaktuj się z nami</Header>
+    <Header>Bądzmy w kontakcie</Header>
     <TextHeader>Miasto</TextHeader>
-    <p>Kraków</p>
+    <Pargaraph>Kraków</Pargaraph>
     <TextHeader>Numer telefonu</TextHeader>
-    <p>727-759-421</p>
+    <Pargaraph>727-759-421</Pargaraph>
     <TextHeader>E-mail</TextHeader>
     <Email>mdzugan98@gmail.com</Email>
   </Wraper>

@@ -10,7 +10,7 @@ const IconContent = [
     icon: call,
     header: "1. Chcę Cie zrozumieć",
     text:
-      "Każda współpraca rozpoczyna się od rozmowy. Chcę zrozumieć Twoje potrzeby, to co cię motywuje i co chcesz osiągnąć.",
+      "Każda współpraca rozpoczyna się od rozmowy. Chcę zrozumieć Twoje potrzeby, to co cię motywuje i co chcesz osiągnąć.Każda współpraca rozpoczyna się od rozmowy. Chcę zrozumieć Twoje potrzeby, to co cię motywuje i co chcesz osiągnąć.",
   },
   {
     icon: note,
@@ -22,7 +22,7 @@ const IconContent = [
     icon: train,
     header: "3. Działamy!",
     text:
-      "Teraz już mam wszystkie potrzebne informacje aby dopasować optymalny trening do twoich potrzeb. Do dzieła!",
+      "Teraz już mam wszystkie potrzebne informacje aby dopasować optymalny trening do twoich potrzeb. Do dzieła!Teraz już mam wszystkie potrzebne informacje aby dopasować optymalny trening do twoich potrzeb. Do dzieła!",
   },
 ];
 
@@ -32,24 +32,38 @@ const StyledImg = styled.img`
   width: 150px;
   height: 150px;
   border: 1px solid gray;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    margin-right: 40px;
+  }
 `;
 
 const IconWraper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 30px 10px;
+  margin: 60px 30px;
+
+  @media (min-width: 768px) {
+    margin: 50px 80px;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 
 const ColumnWrap = styled.div`
   display: flex;
   flex-direction: column;
+  line-height: 1.7rem;
 `;
 
 const StyledHeader = styled.h3`
   margin: 10px 0;
   font-size: 1.3rem;
+  color: #364f6b;
 `;
 
 const HowIcons = () => (

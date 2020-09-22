@@ -9,14 +9,15 @@ const NavItems = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #fabea7;
-  height: 45px;
+  background-color: #f5f5f5;
+  height: 80px;
   /* overflow-x: hidden; */
 `;
 
 const NavImg = styled.img`
-  height: 100%;
-  width: 180px;
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
   margin-left: 3vw;
 `;
 

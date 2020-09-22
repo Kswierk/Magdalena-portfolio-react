@@ -3,7 +3,12 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledParagraph = styled.p`
-  margin: 30px 15px;
+  margin: 40px 15px;
+  line-height: 1.7rem;
+
+  @media (min-width: 2560px) {
+    line-height: 3rem;
+  }
 `;
 
 const BriefContent = [

@@ -9,12 +9,11 @@ import { QuoteLeft } from "@styled-icons/boxicons-solid/QuoteLeft";
 const Wrapper = styled.div`
   position: relative;
   max-width: 1200px;
-  /* height: 400px; */
   padding: 30px;
   margin: 0 auto;
   outline: none;
-  /* background-color: #fabea7; */
   box-sizing: border-box;
+  margin-bottom: 40px;
 `;
 
 const NewSlider = styled(Slider)``;
@@ -25,8 +24,8 @@ const Page = styled.div`
 
 const PositionedQuote = styled(QuoteLeft)`
   position: absolute;
-  opacity: 0.5;
-  color: lightgray;
+  opacity: 0.3;
+  color: #fc5185;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
