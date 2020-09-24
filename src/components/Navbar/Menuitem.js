@@ -6,7 +6,7 @@ import { menuItems } from "./menuItems";
 const NavMenu = styled.ul`
   position: absolute;
   left: ${(props) => (props.alter ? "-100%" : "0")};
-  top: 80px;
+  top: 60px;
   width: 100%;
   background-color: #f5f5f5;
   transition: ${(props) => (props.alter ? "0" : "all .4s ease")};
@@ -30,7 +30,7 @@ const NavLi = styled.li`
   height: 100%;
   padding: 15px 0;
   transition: 0.3s;
-  color: #fc5185;
+  color: #f12b6b;
   text-transform: uppercase;
 
   @media (min-width: 992px) {

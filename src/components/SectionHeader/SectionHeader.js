@@ -12,7 +12,7 @@ const StyledHeader = styled.h2`
     border-radius: 4px;
     margin: 15px 0 50px 0;
     width: 100px;
-    background: #fc5185;
+    background: #f12b6b;
     display: block;
   }
 

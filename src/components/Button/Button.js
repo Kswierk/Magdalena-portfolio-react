@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const StandardBtn = styled.button`
   position: relative;
-  background-color: #fc5185;
+  background-color: #f12b6b;
   color: white;
   display: block;
   outline: none;
