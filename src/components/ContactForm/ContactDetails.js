@@ -6,11 +6,15 @@ const Wraper = styled.div`
   border: 1px solid lightgray;
   text-align: center;
   text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 50px;
 
   @media (min-width: 1024px) {
     padding: 20px;
+    margin: 0;
     margin-bottom: 0;
+    width: auto;
   }
 `;
 
@@ -37,7 +41,7 @@ const Pargaraph = styled.p`
 
 const ContactDetails = () => (
   <Wraper>
-    <Header>Bądzmy w kontakcie</Header>
+    <Header>Kontakt bezpośredni</Header>
     <TextHeader>Miasto</TextHeader>
     <Pargaraph>Kraków</Pargaraph>
     <TextHeader>Numer telefonu</TextHeader>

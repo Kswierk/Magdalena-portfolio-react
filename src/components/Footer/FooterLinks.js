@@ -31,7 +31,7 @@ const Styledh2 = styled.h2`
 
 const FooterLinks = () => (
   <>
-    <Styledh2>Strony</Styledh2>
+    <Styledh2>Na skróty</Styledh2>
     <StyledLink to="/">
       <NavLi>{menuItems[0]}</NavLi>
     </StyledLink>

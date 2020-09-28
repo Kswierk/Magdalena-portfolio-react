@@ -9,12 +9,10 @@ const CardWraper = styled.div`
 
   @media (min-width: 768px) {
     min-width: 40vw;
-    /* margin: auto 20px; */
-    /* height: 600px; */
   }
 
   @media (min-width: 1024px) {
-    min-width: 50vw;
+    min-width: 30vw;
   }
 `;
 
@@ -24,12 +22,13 @@ const CardImg = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 40vw;
+  min-height: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
+  min-height: 50vh;
 `;
 
 const TrainerName = styled.p`
@@ -44,8 +43,11 @@ const TrainerPosition = styled.p`
 const InstagramLinkWraper = styled.div`
   height: 45px;
   width: 45px;
-  color: #f12b6b;
   margin: 20px auto;
+`;
+
+const StyledLink = styled.a`
+  color: #f12b6b;
 `;
 
 const TrainerCard = (props) => (
@@ -54,7 +56,13 @@ const TrainerCard = (props) => (
     <TrainerName>{props.name}</TrainerName>
     <TrainerPosition>{props.position}</TrainerPosition>
     <InstagramLinkWraper>
-      <InstagramAlt />
+      <StyledLink
+        href={"https://www.facebook.com/madzia.dzugan"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <InstagramAlt />
+      </StyledLink>
     </InstagramLinkWraper>
   </CardWraper>
 );

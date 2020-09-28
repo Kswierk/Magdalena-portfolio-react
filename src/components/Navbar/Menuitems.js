@@ -1,1 +1,1 @@
-export const menuItems = ["strona główna", "o mnie", "oferta", "kontakt"];
+export const menuItems = ["strona główna", "o nas", "oferta", "kontakt"];

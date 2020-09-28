@@ -16,7 +16,7 @@ const Styledh3 = styled.h3`
 
 const FooterContact = () => (
   <Wraper>
-    <Styledh2>Szybki kontakt</Styledh2>
+    <Styledh2>Masz pytania?</Styledh2>
     <Styledh3>Numer telefonu</Styledh3>
     <p>727-759-421</p>
     <Styledh3>E-mail</Styledh3>

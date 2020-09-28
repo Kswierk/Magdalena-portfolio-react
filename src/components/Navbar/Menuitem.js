@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { menuItems } from "./menuItems";
 
 const NavMenu = styled.ul`
@@ -29,8 +29,7 @@ const NavLi = styled.li`
   justify-content: center;
   height: 100%;
   padding: 15px 0;
-  transition: 0.3s;
-  color: #f12b6b;
+  /* transition: 0.3s; */
   text-transform: uppercase;
 
   @media (min-width: 992px) {
@@ -43,11 +42,15 @@ const NavLi = styled.li`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   text-decoration: none;
-  color: black;
   border-radius: 3px;
   transition: all ease 0.3s;
+  color: #f12b6b;
+
+  &.active {
+    color: green;
+  }
 `;
 
 const NavBurger = styled.div`
@@ -113,7 +116,7 @@ class MenuItem extends Component {
         </NavBurger>
         {this.state.clicked ? (
           <NavMenu onClick={this.handleClick}>
-            <StyledLink to="/">
+            <StyledLink exact to="/">
               <NavLi>{menuItems[0]}</NavLi>
             </StyledLink>
             <StyledLink to="/about">
@@ -128,7 +131,7 @@ class MenuItem extends Component {
           </NavMenu>
         ) : (
           <NavMenu alter>
-            <StyledLink to="/">
+            <StyledLink exact to="/">
               <NavLi>{menuItems[0]}</NavLi>
             </StyledLink>
             <StyledLink to="/about">

@@ -8,21 +8,21 @@ import train from "../../../assets/img/train.png";
 const IconContent = [
   {
     icon: call,
-    header: "1. Chcę Cie zrozumieć",
+    header: "1. Chcemy Cie zrozumieć",
     text:
-      "Każda współpraca rozpoczyna się od rozmowy. Chcę zrozumieć Twoje potrzeby, to co cię motywuje i co chcesz osiągnąć.Każda współpraca rozpoczyna się od rozmowy. Chcę zrozumieć Twoje potrzeby, to co cię motywuje i co chcesz osiągnąć.",
+      "Każda współpraca rozpoczyna się od rozmowy. Chcemy zrozumieć Twoje potrzeby, to co cię motywuje i co chcesz osiągnąć. Dzięki tej wiedzy jesteśmy w stanie dostosować do Ciebie plan indywidualnego działania.",
   },
   {
     icon: note,
     header: "2. Trening wprowadzający",
     text:
-      "Nasze pierwsze spotkanie rozpoczynamy od bezpłatnej sesji treningowej, na której przeprowadzę testy funkcjonalne oraz rozgrzewkę przed Twoją przygodą z treningiem.",
+      "Nasze pierwsze spotkanie rozpoczynamy od bezpłatnej sesji treningowej, na której przeprowadzamy testy funkcjonalne, na podstawie których możemy stwierdzić na jakich ćwiczeniach powinniśmy bazować, aby jak najszybciej osiągnąć Twój cel.",
   },
   {
     icon: train,
     header: "3. Działamy!",
     text:
-      "Teraz już mam wszystkie potrzebne informacje aby dopasować optymalny trening do twoich potrzeb. Do dzieła!Teraz już mam wszystkie potrzebne informacje aby dopasować optymalny trening do twoich potrzeb. Do dzieła!",
+      "Teraz już mamy wszystkie potrzebne informacje aby dopasować optymalny trening do twoich potrzeb. Od teraz wybrany trener będzie  do Twojej dypozycji. Do dzieła!",
   },
 ];
 

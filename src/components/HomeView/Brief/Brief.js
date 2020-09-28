@@ -28,7 +28,7 @@ const ColumnWraper = styled.div`
 const Brief = () => {
   return (
     <>
-      <SectionHeader textHeader={"czym się zajmuję"} />
+      <SectionHeader textHeader={"czym się zajmujemy"} />
       <StyledBackground>
         <BriefText />
         <ColumnWraper>

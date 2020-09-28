@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Wraper = styled.div`
   margin: 80px auto;
+  max-width: 1200px;
 `;
 
 const Header = styled.h3`
@@ -24,16 +25,16 @@ const Paragraph = styled.p`
 const InfoText = () => (
   <>
     <Wraper>
-      <Header>certyfikowana trenerka personalna w krakowie</Header>
+      <Header>certyfikowani trenerzy personalni w krakowie</Header>
       <Paragraph>
-        Jeżeli szukasz trenerki personalnej z możliwością dojazdu do twojego
-        miejsca zamieszkania, to dobrze trafiłaś!
+        Jeżeli szukasz trenerów personalnych z możliwością dojazdu do twojego
+        miejsca zamieszkania, to dobrze trafiłeś!
       </Paragraph>
       <Paragraph>
-        Jestem zdeterminowana i zależy mi na twoich wynikach. Moje kwalifikacje
-        pomogą Ci osiągnąć wymarzony cel sylwetkowy. Wnoszę sprawdzone i
-        efektywne metody treningowe, które pozwolą zmienić twój wygląd i
-        samopoczucie.
+        Jesteśmy zdeterminowani i zależy nam na twoich wynikach. Nasze
+        kwalifikacje pomogą Ci osiągnąć wymarzony cel sylwetkowy. Wnosimy
+        sprawdzone i efektywne metody treningowe, które pozwolą zmienić twój
+        wygląd i samopoczucie.
       </Paragraph>
     </Wraper>
   </>

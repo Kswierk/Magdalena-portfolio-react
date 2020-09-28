@@ -9,19 +9,19 @@ const IconContent = [
     icon: <Trophy color={"#fc5185  "} />,
     header: "Doświadczenie",
     text:
-      "Plans that are designed to help you fall in love with fitness and get the results you want.",
+      "Wykonaliśmy ponad 3000 treningów personalnych z klientami, którzy razem z nami osiągneli swoje cele.",
   },
   {
     icon: <PersonFill color={"#fc5185  "} />,
     header: "Indywidualne podejście",
     text:
-      "Plans that are designed to help you fall in love with fitness and get the results you want.",
+      "Zdajemy sobie sprawę, że każdy z Was ma inne potrzeby. Dlatego aby uzyskać jak najlepsze efekty, skupiamy się na optymalizacji treningu pod daną osobę.",
   },
   {
     icon: <Trophy color={"#fc5185  "} />,
-    header: "Doświadczenie",
+    header: "Motywacja",
     text:
-      "Plans that are designed to help you fall in love with fitness and get the results you want.",
+      "Nasi trenerzy zadbają o to, aby podczas treningu nie zabrakło Ci dużej dawki motywacji i dobrej zabawy",
   },
 ];
 

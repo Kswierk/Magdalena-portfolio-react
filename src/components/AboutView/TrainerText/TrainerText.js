@@ -4,16 +4,11 @@ import styled from "styled-components";
 const StyledText = styled.p`
   line-height: 1.7rem;
   background-color: white;
-  margin: 20px;
-  margin: 0 auto;
+  margin: 0 10px;
 `;
 
 const TextWraper = styled.div`
   margin: 20px 10px;
-
-  @media (min-width: 1024px) {
-    column-count: 2;
-  }
 `;
 
 const TrainerText = () => (

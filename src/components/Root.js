@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import { createGlobalStyle } from "styled-components";
 import About from "../views/About";
 import Contact from "../views/Contact";
@@ -30,6 +31,7 @@ const Root = () => {
         <Route path="/offer" component={Offer} />
         <Route path="/contact" component={Contact} />
       </Switch>
+      <Footer />
     </Router>
   );
 };
