@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { menuItems } from "./menuItems";
+import { menuItems } from "./MenuItems";
 
 const NavMenu = styled.ul`
   position: absolute;

@@ -1,5 +1,5 @@
 import React from "react";
-import { menuItems } from "../Navbar/menuItems";
+import { menuItems } from "../Navbar/MenuItems";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
