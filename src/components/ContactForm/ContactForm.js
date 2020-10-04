@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import emailjs from "emailjs-com";
 import styled from "styled-components";
 import SectionHeader from "../SectionHeader/SectionHeader";
@@ -18,18 +18,16 @@ const Wraper = styled.div`
   }
 `;
 
-const StyledInput = styled.input`
+const StyledButton = styled.button`
   position: relative;
   background-color: #fc5185;
   font-weight: 500;
   color: white;
-  display: block;
-  outline: none;
   border: none;
   padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  margin: 50px auto;
+  margin: 50px auto 20px;
   text-transform: uppercase;
   width: 30%;
   min-width: 150px;
@@ -56,6 +54,10 @@ const StyledParagraph = styled.p`
   width: 80%;
 `;
 
+const StyledParagraphCentered = styled.p`
+  margin: 0px auto 35px;
+`;
+
 const Input = styled.input`
   height: 35px;
   border: 1px solid lightgray;
@@ -68,7 +70,13 @@ const StyledTextArea = styled.textarea`
 `;
 
 export default function ContactUs() {
+
+  const [msg, setmsg] =useState();
+  const [isButtonDisabled, setisButtonDisabled] =useState(false);
+
   function sendEmail(e) {
+    setisButtonDisabled(true)
+    setmsg("Przesyłanie odpowiedzi");
     e.preventDefault();
 
     emailjs
@@ -82,9 +90,13 @@ export default function ContactUs() {
         (result) => {
           if (result.text === "OK") {
             console.log("udalo sie");
+            setmsg("Twoja odpowiedź została przesłana pomyślnie")
+            setisButtonDisabled(false)
           }
         },
         (error) => {
+          setmsg("Przepraszamy, spróbuj ponownie");
+          setisButtonDisabled(false)
           console.log(error.text);
         }
       );
@@ -112,12 +124,13 @@ export default function ContactUs() {
             <StyledLabel>Treść wiadomości</StyledLabel>
             <StyledTextArea name="message" />
 
-            <StyledInput
-              onClick={formSendHandler}
+            <StyledButton
+              disabled={isButtonDisabled}
               type="submit"
-              value="Wyślij"
-            />
-            <p>{formSendHandler}</p>
+              >
+              Wyślij
+            </StyledButton>
+            <StyledParagraphCentered>{msg}</StyledParagraphCentered>
           </Form>
         </div>
         <ContactDetails />
