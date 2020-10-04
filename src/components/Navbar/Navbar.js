@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/img/logo.png";
 import styled from "styled-components";
-import MenuItem from "./Menuitem";
+import MenuItem from "./MenuItem";
 import { Link } from "react-router-dom";
 
 const NavItems = styled.nav`

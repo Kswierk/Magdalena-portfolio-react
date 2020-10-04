@@ -17,7 +17,8 @@ const BriefContent = [
       "Wiemy, że jesteś zajęty. Dlatego chcemy ułatwić Ci proces poszukiwania skutecznego trenera personalnego. Naszym celem jest uzyskanie przez Ciebie jak najlepszych rezultatów i wyników treningowych, które przełożą się na Twoje zdrowie, samopoczucie i pewność siebie",
   },
   {
-    text: "Nasz duet .",
+    text:
+      "Zastanawiasz się który trener będzie dla Ciebie odpowiedni? Napisz do nas coś o sobie i o swoich celach treningowych, a pomoże Ci trener o dopasowanej do Twoich potrzeb specjalizacji  .",
   },
   {
     text:

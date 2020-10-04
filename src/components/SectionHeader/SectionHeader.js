@@ -3,17 +3,23 @@ import styled from "styled-components";
 
 const StyledHeader = styled.h2`
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
-  margin: 60px 40px 20px 40px;
+  margin: 100px 40px 80px 40px;
 
-  :after {
+  &:after {
     content: "";
-    height: 2px;
-    border-radius: 4px;
-    margin: 15px 0 50px 0;
-    width: 100px;
-    background: #f12b6b;
     display: block;
+    margin: 10px auto;
+    height: 5px;
+    width: 50%;
+    border-bottom: 2px solid red;
+  }
+
+  @media (min-width: 500px) {
+    &:after {
+      display: none;
+    }
   }
 
   @media (min-width: 2560px) {
@@ -21,10 +27,41 @@ const StyledHeader = styled.h2`
   }
 `;
 
+const StyledSpan = styled.span`
+  @media (min-width: 500px) {
+    display: inline-block;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 2px solid red;
+      border-radius: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 70px;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+  }
+`;
+
 const SectionHeader = (props) => {
   return (
     <>
-      <StyledHeader>{props.textHeader}</StyledHeader>
+      <StyledHeader>
+        <StyledSpan>{props.textHeader}</StyledSpan>
+      </StyledHeader>
     </>
   );
 };

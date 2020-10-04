@@ -7,7 +7,7 @@ const Wraper = styled.div`
 `;
 
 const Header = styled.h3`
-  margin: 30px auto;
+  margin: 30px 30px;
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
@@ -27,8 +27,8 @@ const InfoText = () => (
     <Wraper>
       <Header>certyfikowani trenerzy personalni w krakowie</Header>
       <Paragraph>
-        Jeżeli szukasz trenerów personalnych z możliwością dojazdu do twojego
-        miejsca zamieszkania, to dobrze trafiłeś!
+        Jeżeli szukasz trenerów personalnych z możliwością wykonania treningu w
+        wybranym przez Ciebie miejscu, to dobrze trafiłeś!
       </Paragraph>
       <Paragraph>
         Jesteśmy zdeterminowani i zależy nam na twoich wynikach. Nasze

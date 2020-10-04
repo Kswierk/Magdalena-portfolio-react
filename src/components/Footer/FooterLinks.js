@@ -27,6 +27,7 @@ const StyledLink = styled(Link)`
 
 const Styledh2 = styled.h2`
   font-weight: 400;
+  margin-bottom: 30px;
 `;
 
 const FooterLinks = () => (

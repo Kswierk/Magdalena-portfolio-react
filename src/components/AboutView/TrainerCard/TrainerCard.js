@@ -4,7 +4,7 @@ import KacperBcg from "../../../assets/img/kacperbcg.jpg";
 import { InstagramAlt } from "@styled-icons/boxicons-logos/InstagramAlt";
 
 const CardWraper = styled.div`
-  margin: 0 10px;
+  margin: 0 5px 0 10px;
   background-color: white;
 
   @media (min-width: 768px) {

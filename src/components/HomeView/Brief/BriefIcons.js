@@ -2,7 +2,8 @@ import React from "react";
 
 import styled from "styled-components";
 import { Trophy } from "@styled-icons/boxicons-regular/Trophy";
-import { PersonFill } from "@styled-icons/bootstrap/PersonFill";
+import { PersonOutline } from "@styled-icons/evaicons-outline/PersonOutline";
+import { Medal } from "@styled-icons/boxicons-regular/Medal";
 
 const IconContent = [
   {
@@ -12,13 +13,13 @@ const IconContent = [
       "Wykonaliśmy ponad 3000 treningów personalnych z klientami, którzy razem z nami osiągneli swoje cele.",
   },
   {
-    icon: <PersonFill color={"#fc5185  "} />,
+    icon: <PersonOutline color={"#fc5185  "} />,
     header: "Indywidualne podejście",
     text:
       "Zdajemy sobie sprawę, że każdy z Was ma inne potrzeby. Dlatego aby uzyskać jak najlepsze efekty, skupiamy się na optymalizacji treningu pod daną osobę.",
   },
   {
-    icon: <Trophy color={"#fc5185  "} />,
+    icon: <Medal color={"#fc5185  "} />,
     header: "Motywacja",
     text:
       "Nasi trenerzy zadbają o to, aby podczas treningu nie zabrakło Ci dużej dawki motywacji i dobrej zabawy",

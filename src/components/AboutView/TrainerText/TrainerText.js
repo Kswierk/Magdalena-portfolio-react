@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledText = styled.p`
+const StyledText = styled.div`
   line-height: 1.7rem;
   background-color: white;
   margin: 0 10px;
@@ -14,7 +14,7 @@ const TextWraper = styled.div`
 const TrainerText = () => (
   <StyledText>
     <TextWraper>
-      <div>
+      <p>
         As a Temple University alumni, Noelle gained her admiration for personal
         training after competing in Division 1 collegiate track and field where
         she set the new record in the 1000 meters. Noelle attributes her success
@@ -29,20 +29,23 @@ const TrainerText = () => (
         lives. Like in her former track days, Noelle’s training program focuses
         on both fast and slow-twitch muscle development by using weight training
         for muscular strength and endurance.
-      </div>
-      She couples this with yoga, which helps with toning and the elasticity of
-      the muscles. Her background in dance is also apparent in the creativity
-      and grace of her movements, which engage parts of the body you aren’t used
-      to working. Each of her workouts incorporate a combination of total-body
-      work and isolation movements. With 10+ years of experience in NYC as an
-      ACE certified personal trainer and a reputation for being a hard-ass and a
-      supportive motivator in the gym, Noelle is known for getting the job done
-      in whatever capacity you need. She was recently named one of Men’s Health
-      top picks for women who could 100% kick your ass! Her celebrity clients
-      include Jenn Hyman, Founder of Rent the Runway and former Rockette, Mandy
-      Evans-Brown. Noelle also has a long-standing roster of clients who joined
-      the Leading Edge movement in its infant stages, and years later are still
-      getting their booty kicked under her supervision.
+      </p>
+      <p>
+        She couples this with yoga, which helps with toning and the elasticity
+        of the muscles. Her background in dance is also apparent in the
+        creativity and grace of her movements, which engage parts of the body
+        you aren’t used to working. Each of her workouts incorporate a
+        combination of total-body work and isolation movements. With 10+ years
+        of experience in NYC as an ACE certified personal trainer and a
+        reputation for being a hard-ass and a supportive motivator in the gym,
+        Noelle is known for getting the job done in whatever capacity you need.
+        She was recently named one of Men’s Health top picks for women who could
+        100% kick your ass! Her celebrity clients include Jenn Hyman, Founder of
+        Rent the Runway and former Rockette, Mandy Evans-Brown. Noelle also has
+        a long-standing roster of clients who joined the Leading Edge movement
+        in its infant stages, and years later are still getting their booty
+        kicked under her supervision.
+      </p>
     </TextWraper>
   </StyledText>
 );

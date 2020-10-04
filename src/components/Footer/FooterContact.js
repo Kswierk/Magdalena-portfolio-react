@@ -6,6 +6,7 @@ const Wraper = styled.div``;
 const Styledh2 = styled.h2`
   font-weight: 400;
   margin-bottom: 30px;
+  padding-top: 30px;
 `;
 
 const Styledh3 = styled.h3`

@@ -5,14 +5,11 @@ const CardWraper = styled.div`
   background-color: #eee;
   text-align: center;
   border-radius: 10px;
-  margin: 30px 10px;
+  margin: 40px 40px 80px 40px;
   width: 300px;
 
   @media (min-width: 948px) {
-    width: 400px;
-  }
-  @media (min-width: 1440px) {
-    width: 280px;
+    width: 350px;
   }
 `;
 
@@ -23,12 +20,6 @@ const CardHeader = styled.h3`
   font-weight: 500;
   text-transform: uppercase;
   background-color: #fd94b4;
-`;
-
-const PriceComment = styled.h4`
-  font-weight: 300;
-  font-size: 1.2rem;
-  background-color: #f6c7c7;
 `;
 
 const PriceTag = styled.p`
@@ -60,7 +51,6 @@ const CardButton = styled.button`
 const OfferCard = (props) => (
   <CardWraper>
     <CardHeader>{props.offer}</CardHeader>
-    <PriceComment>za sesję</PriceComment>
     <PriceTag>{props.price}</PriceTag>
     <PriceIncludes>{props.trainings}</PriceIncludes>
     <PriceIncludes>{props.includes}</PriceIncludes>

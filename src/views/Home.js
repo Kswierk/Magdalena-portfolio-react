@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import HeroSection from "../components/HomeView/HeroSection/HeroSection";
 import Brief from "../components/HomeView/Brief/Brief";
@@ -12,6 +12,10 @@ const HomeWraper = styled.div`
 `;
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <HeroSection />
