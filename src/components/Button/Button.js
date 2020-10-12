@@ -5,17 +5,20 @@ import styled from "styled-components";
 
 const StandardBtn = styled.button`
   position: relative;
-  background-color: #f12b6b;
+  /* background-color: #f4f4f4; */
+  background: transparent;
+  border: 1px solid white;
   color: white;
   display: block;
   outline: none;
-  border: none;
+  /* border: none; */
   padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 50px;
   text-transform: uppercase;
   font-weight: 500;
+  z-index: 50;
 
   @media (min-width: 1024px) {
     padding: 1.5rem 2.5rem;

@@ -25,7 +25,7 @@ const Page = styled.div`
 const PositionedQuote = styled(QuoteLeft)`
   position: absolute;
   opacity: 0.3;
-  color: #f12b6b;
+  color: #f0a500;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

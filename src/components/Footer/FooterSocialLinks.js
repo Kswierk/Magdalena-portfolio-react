@@ -7,17 +7,17 @@ import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 const soclinks = [
   {
     name: "instagram",
-    icon: <InstagramAlt color="#fc5185" />,
+    icon: <InstagramAlt color="#f0a500" />,
     url: "https://www.instagram.com/magdadzugan/",
   },
   {
     name: "facebook",
-    icon: <FacebookSquare color="#fc5185" />,
+    icon: <FacebookSquare color="#f0a500" />,
     url: "https://www.facebook.com/madzia.dzugan",
   },
   {
     name: "linkedin",
-    icon: <LinkedinSquare color="#fc5185" />,
+    icon: <LinkedinSquare color="#f0a500" />,
     url: "https://www.facebook.com/madzia.dzugan",
   },
 ];
@@ -27,7 +27,7 @@ const IconWraper = styled.div`
   width: 45px;
   border-radius: 50%;
   padding: 3px;
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
   margin: 10px;
 `;
 
@@ -50,7 +50,7 @@ const Styledh2 = styled.h2`
 const FooterSocialLinks = () => (
   <>
     <StyledIcons>
-      <Styledh2>Obserwuj mnie</Styledh2>
+      <Styledh2>Obserwuj nas</Styledh2>
       <IconsContainer>
         {soclinks.map((item) => (
           <IconWraper key={item.name}>

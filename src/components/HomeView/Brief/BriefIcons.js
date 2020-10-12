@@ -7,19 +7,19 @@ import { Medal } from "@styled-icons/boxicons-regular/Medal";
 
 const IconContent = [
   {
-    icon: <Trophy color={"#fc5185  "} />,
+    icon: <Trophy color={"#f0a500  "} />,
     header: "Doświadczenie",
     text:
       "Wykonaliśmy ponad 3000 treningów personalnych z klientami, którzy razem z nami osiągneli swoje cele.",
   },
   {
-    icon: <PersonOutline color={"#fc5185  "} />,
+    icon: <PersonOutline color={"#f0a500  "} />,
     header: "Indywidualne podejście",
     text:
       "Zdajemy sobie sprawę, że każdy z Was ma inne potrzeby. Dlatego aby uzyskać jak najlepsze efekty, skupiamy się na optymalizacji treningu pod daną osobę.",
   },
   {
-    icon: <Medal color={"#fc5185  "} />,
+    icon: <Medal color={"#f0a500  "} />,
     header: "Motywacja",
     text:
       "Nasi trenerzy zadbają o to, aby podczas treningu nie zabrakło Ci dużej dawki motywacji i dobrej zabawy",
@@ -32,7 +32,7 @@ const StyledIcon = styled.div`
   min-width: 70px;
   height: 70px;
   padding: 5px;
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
   margin-right: 30px;
 `;
 

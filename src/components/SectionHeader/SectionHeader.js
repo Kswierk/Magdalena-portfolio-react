@@ -5,7 +5,7 @@ const StyledHeader = styled.h2`
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  margin: 100px 40px 80px 40px;
+  margin: 80px 40px;
 
   &:after {
     content: "";
@@ -13,7 +13,7 @@ const StyledHeader = styled.h2`
     margin: 10px auto;
     height: 5px;
     width: 50%;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #f0a500;
   }
 
   @media (min-width: 500px) {
@@ -37,7 +37,7 @@ const StyledSpan = styled.span`
       content: "";
       position: absolute;
       height: 5px;
-      border-bottom: 2px solid red;
+      border-bottom: 2px solid #f0a500;
       border-radius: 2px;
       top: 50%;
       transform: translateY(-50%);

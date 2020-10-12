@@ -3,13 +3,12 @@ import emailjs from "emailjs-com";
 import styled from "styled-components";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import ContactDetails from "./ContactDetails";
-import Modal from "../Modal/Modal";
 
 const Wraper = styled.div`
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  box-shadow: inset 0px 0px 15px 5px #bfbfbf;
+  /* box-shadow: inset 0px 0px 15px 5px #bfbfbf; */
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -20,9 +19,9 @@ const Wraper = styled.div`
 
 const StyledButton = styled.button`
   position: relative;
-  background-color: #fc5185;
+  background-color: #f0a500;
   font-weight: 500;
-  color: white;
+  color: #f4f4f4;
   border: none;
   padding: 1rem;
   border-radius: 5px;
@@ -42,7 +41,7 @@ const Form = styled.form`
 
 const StyledLabel = styled.label`
   padding: 7px;
-  color: #fc5185;
+  color: #f0a500;
   text-transform: uppercase;
   font-size: 0.8em;
   margin-top: 15px;
@@ -56,6 +55,8 @@ const StyledParagraph = styled.p`
 
 const StyledParagraphCentered = styled.p`
   margin: 0px auto 35px;
+  color: green;
+  padding: 15px;
 `;
 
 const Input = styled.input`
@@ -89,7 +90,9 @@ export default function ContactUs() {
         (result) => {
           if (result.text === "OK") {
             console.log("udalo sie");
-            setmsg("Twoja odpowiedź została przesłana pomyślnie");
+            setmsg(
+              "Dziękujemy za kontakt, skontaktujemy się z Tobą w przeciągu 24h"
+            );
             setisButtonDisabled(false);
           }
         },
@@ -101,8 +104,6 @@ export default function ContactUs() {
       );
     e.target.reset();
   }
-
-  const formSendHandler = () => <div>asdasdas</div>;
 
   return (
     <>

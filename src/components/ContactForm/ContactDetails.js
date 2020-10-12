@@ -25,7 +25,7 @@ const Header = styled.h3`
 `;
 
 const TextHeader = styled.h4`
-  color: #f56a79;
+  color: #f0a500;
   margin: 10px auto;
   font-weight: 600;
   font-size: 0.9rem;

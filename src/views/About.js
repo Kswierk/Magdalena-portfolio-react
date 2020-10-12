@@ -30,7 +30,7 @@ const About = () => {
       <HeaderImage />
       <InfoText />
       <CardWraper>
-        <TrainerCard name="Magda" position="trenerka" />
+        <TrainerCard madzia name="Magda" position="trenerka" />
         <TrainerText />
       </CardWraper>
       <CardWraper>

@@ -10,6 +10,7 @@ const UserReview = styled.div`
   min-height: 280px;
   outline: none;
   line-height: 1.5rem;
+  margin: 10px 30px;
 `;
 
 const StarContainer = styled.div`

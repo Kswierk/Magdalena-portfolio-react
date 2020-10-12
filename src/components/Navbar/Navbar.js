@@ -5,19 +5,19 @@ import MenuItem from "./MenuItem";
 import { Link } from "react-router-dom";
 
 const NavItems = styled.nav`
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #f5f5f5;
   height: 60px;
+  background-color: #1a1c20;
 `;
 
 const NavImg = styled.img`
   position: relative;
   height: 60px;
-  margin-left: 3vw;
+  margin-left: 5vw;
 `;
 
 const Navbar = () => {

@@ -5,15 +5,15 @@ import FooterContact from "./FooterContact";
 import FooterLinks from "./FooterLinks";
 
 const FooterWraper = styled.div`
-  background-color: #364f6b;
+  background-color: #1a1c20;
   text-transform: uppercase;
-  color: #f5f5f5;
+  color: #f4f4f4;
   text-align: center;
 
   @media (min-width: 1024px) {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 
@@ -25,7 +25,13 @@ const LinksWraper = styled.div`
   margin: 40px;
 `;
 
-const ContactWraper = styled.div``;
+const ContactWraper = styled.div`
+  margin-top: 40px;
+  padding-top: 30px;
+  @media (min-width: 1024px) {
+    padding-top: 0;
+  }
+`;
 
 const Footer = () => (
   <FooterWraper>

@@ -22,7 +22,7 @@ const BriefContent = [
   },
   {
     text:
-      "Trenuj na siłowni, w domu, na świeżym powietrzu,a nawet w Twoim biurze. Trenuj na swoich zasadach, tak abyś już niegdy nie musiał pominąć żadnego treningu",
+      "Trenuj na siłowni, w domu, na świeżym powietrzu, a nawet w Twoim biurze. Trenuj na swoich zasadach, tak abyś już nigdy nie musiał pominąć żadnego treningu",
   },
 ];
 

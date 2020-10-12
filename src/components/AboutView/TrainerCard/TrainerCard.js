@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import KacperBcg from "../../../assets/img/kacperbcg.jpg";
+import kacper from "../../../assets/img/kacper.jpg";
+import madzia from "../../../assets/img/madzia.jpg";
 import { InstagramAlt } from "@styled-icons/boxicons-logos/InstagramAlt";
 
 const CardWraper = styled.div`
@@ -16,8 +17,22 @@ const CardWraper = styled.div`
   }
 `;
 
-const CardImg = styled.div`
-  background: url(${KacperBcg}) no-repeat center center;
+const MadziaImg = styled.div`
+  background: url(${madzia}) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 50vh;
+`;
+const KacperImg = styled.div`
+  background: url(${kacper}) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,12 +62,12 @@ const InstagramLinkWraper = styled.div`
 `;
 
 const StyledLink = styled.a`
-  color: #f12b6b;
+  color: #f0a500;
 `;
 
 const TrainerCard = (props) => (
   <CardWraper>
-    <CardImg />
+    {props.madzia ? <MadziaImg /> : <KacperImg />}
     <TrainerName>{props.name}</TrainerName>
     <TrainerPosition>{props.position}</TrainerPosition>
     <InstagramLinkWraper>

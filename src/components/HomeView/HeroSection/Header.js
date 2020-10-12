@@ -7,6 +7,7 @@ const StyledHeader = styled.h1`
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1.5em;
+  z-index: 5;
 
   @media (min-width: 1024px) {
     font-size: 3.5rem;

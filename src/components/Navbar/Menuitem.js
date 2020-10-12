@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { menuItems } from "./MenuItems";
+import { menuItems } from "./menuItems";
 
 const NavMenu = styled.ul`
   position: absolute;
   left: ${(props) => (props.alter ? "-100%" : "0")};
-  top: 60px;
+  top: 59px;
   width: 100%;
-  background-color: #f5f5f5;
-  transition: ${(props) => (props.alter ? "0" : "all .4s ease")};
+  transition: ${(props) => (props.alter ? "0" : "all .8s ease")};
   z-index: 100;
+  background-color: #1a1c20;
+  margin-right: 80px;
 
   @media (min-width: 992px) {
     display: flex;
@@ -18,6 +19,7 @@ const NavMenu = styled.ul`
     left: 0;
     top: 0;
     position: relative;
+    background-color: transparent;
   }
 `;
 
@@ -28,8 +30,8 @@ const NavLi = styled.li`
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 15px 0;
-  /* transition: 0.3s; */
+  padding: 20px 0px;
+  margin: 20px 0;
   text-transform: uppercase;
 
   @media (min-width: 992px) {
@@ -46,18 +48,20 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   border-radius: 3px;
   transition: all ease 0.3s;
-  color: #f12b6b;
+  color: #f4f4f4;
 
-  &.active {
-    color: green;
+  &.active,
+  &:hover {
+    color: #f0a500;
   }
 `;
 
 const NavBurger = styled.div`
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 4vw;
+  z-index: 100;
+  /* top: 15px; */
+  /* transform: translateY(-50%); */
+  right: 50px;
   cursor: pointer;
 
   @media (min-width: 992px) {
@@ -69,7 +73,7 @@ const NavBurgerLine = styled.div`
   height: 3px;
   width: 28px;
   margin: 5px;
-  background-color: #fc5185;
+  background-color: white;
   transition: 0.3s;
 
   :nth-of-type(1) {

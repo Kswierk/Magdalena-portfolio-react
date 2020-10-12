@@ -11,14 +11,19 @@ const HomeWraper = styled.div`
   margin: 0 auto;
 `;
 
-const Home = () => {
+function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const userVh = document.documentElement.clientHeight;
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        arrowClicked={() =>
+          window.scrollTo({ top: userVh, behavior: "smooth" })
+        }
+      />
       <HomeWraper>
         <Brief />
         <HowSection />
@@ -27,6 +32,6 @@ const Home = () => {
       <ContactUs />
     </>
   );
-};
+}
 
 export default Home;

@@ -1,5 +1,5 @@
 import React from "react";
-import { menuItems } from "../Navbar/MenuItems";
+import { menuItems } from "../Navbar/menuItems";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -8,10 +8,9 @@ const NavLi = styled.li`
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding: 5px auto;
   transition: 0.3s;
   color: #f5f5f5;
-  margin: 10px auto;
+  margin-top: 10px;
 
   @media (min-width: 992px) {
     flex-direction: row;
