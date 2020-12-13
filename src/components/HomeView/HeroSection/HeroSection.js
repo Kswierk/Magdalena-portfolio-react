@@ -11,7 +11,7 @@ const HeroImg = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: calc(100vh - 69px);
+  min-height: calc(100vh - 69px);
   display: flex;
   flex-direction: column;
   justify-content: center;
