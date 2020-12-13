@@ -18,7 +18,7 @@ const BriefContent = [
   },
   {
     text:
-      "Zastanawiasz się który trener będzie dla Ciebie odpowiedni? Napisz do nas coś o sobie i o swoich celach treningowych, a pomoże Ci trener o dopasowanej do Twoich potrzeb specjalizacji  .",
+      "Zastanawiasz się który trener będzie dla Ciebie odpowiedni? Napisz do nas coś o sobie i o swoich celach treningowych, a pomoże Ci trener o dopasowanej do Twoich potrzeb specjalizacji",
   },
   {
     text:

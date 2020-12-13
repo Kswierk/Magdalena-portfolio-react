@@ -18,7 +18,7 @@ const CardHeader = styled.h3`
   border-radius: 10px 10px 0 0;
   padding: 20px;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   background-color: #f4f4f4;
   color: #1a1c20;
@@ -48,9 +48,9 @@ const PriceIncludes = styled.p`
 `;
 
 const CardButton = styled.button`
-  padding: 1rem 1.6rem;
+  padding: 1.2rem 2.8rem;
   margin: 20px auto;
-  font-size: 1.5rem;
+  font-weight: 500;
   text-transform: uppercase;
   background-color: #f0a500;
   color: white;

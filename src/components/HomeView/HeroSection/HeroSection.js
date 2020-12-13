@@ -6,13 +6,12 @@ import Header from "./Header";
 
 const HeroImg = styled.div`
   background: url(${Kacperbcg}) no-repeat top fixed;
-  /* position: relative; */
-  top: 0;
+  position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 69px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +34,7 @@ const arrows = keyframes`
 `;
 
 const Arrow = styled.div`
-  margin-top: 100px;
+  /* margin-top: 100px; */
   /* position: absolute; */
   /* top: 75%;
   left: 50%;
@@ -65,10 +64,15 @@ const ArrowDown = styled.div`
 const ImgOpacity = styled.div`
   position: absolute;
   background-color: black;
-  opacity: 0.3;
-  height: calc(100vh - 60px);
+  opacity: 0.2;
+  height: calc(100vh - 69px);
   width: 100%;
   z-index: 2;
+`;
+
+const HorizontalLine = styled.div`
+  position: absolute;
+  top: 100vh;
 `;
 
 const HeroSection = (props) => {
@@ -83,6 +87,7 @@ const HeroSection = (props) => {
           <ArrowDown />
         </Arrow>
       </HeroImg>
+      <HorizontalLine id="brief" />
     </>
   );
 };

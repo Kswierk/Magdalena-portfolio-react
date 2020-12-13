@@ -17,33 +17,20 @@ const HeaderImg = styled.div`
   align-items: center;
 `;
 
-// const ImgOpacity = styled.div`
-//   position: absolute;
-//   display: block;
-//   background-color: black;
-//   opacity: 0.3;
-//   /* top: 60px; */
-//   height: 70vh;
-//   width: 100%;
-//   z-index: 6;
-// `;
-
 const HeaderText = styled.h1`
   color: white;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 2.5rem;
+  font-weight: 700;
   z-index: 5;
 
-  @media (min-width: 800px) {
-    font-size: 4rem;
+  @media (min-width: 1024px) {
+    font-size: 2.5rem;
   }
 `;
 
 const HeaderImage = () => (
   <>
     <HeaderImg>
-      {/* <ImgOpacity /> */}
       <HeaderText>poznajmy się</HeaderText>
     </HeaderImg>
   </>

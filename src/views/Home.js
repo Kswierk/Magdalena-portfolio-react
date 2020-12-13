@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import HeroSection from "../components/HomeView/HeroSection/HeroSection";
 import Brief from "../components/HomeView/Brief/Brief";
@@ -16,14 +16,14 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
 
-  const userVh = document.documentElement.clientHeight;
+  const handleClick = () => {
+    const brief = document.querySelector("#brief");
+    brief.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <>
-      <HeroSection
-        arrowClicked={() =>
-          window.scrollTo({ top: userVh, behavior: "smooth" })
-        }
-      />
+      <HeroSection arrowClicked={handleClick} />
       <HomeWraper>
         <Brief />
         <HowSection />

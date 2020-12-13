@@ -30,11 +30,11 @@ const About = () => {
       <HeaderImage />
       <InfoText />
       <CardWraper>
-        <TrainerCard madzia name="Magda" position="trenerka" />
-        <TrainerText />
+        <TrainerCard madzia name="Magda" position="trenerka personalna" />
+        <TrainerText madzia />
       </CardWraper>
       <CardWraper>
-        <TrainerCard name="Kacper" position="trener" />
+        <TrainerCard name="Kacper" position="trener personalny" />
         <TrainerText />
       </CardWraper>
     </PageWraper>

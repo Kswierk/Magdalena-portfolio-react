@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledText = styled.p`
-  margin: 0 10px 20px 10px;
+  margin: 20px;
   line-height: 1.7rem;
 `;
 
@@ -23,11 +23,11 @@ const OfferText = (props) => (
       <StyledText>
         Trening personalny jaki oferujemy jest ukierunkowany na
         wielopłaszczyznowy ruch, mający poprawić funkcjonalność Twojego ciała,
-        wzmocnić mięśnie oraz spalić jak największą ilość tkanki tłuszczowej.
-        Trening trwa około 60 minut, w takim czasie jesteśmy w stanie wykonać
-        odpowednią pracę przybliżającą cię do założonego celu. Cena treningu
-        wynosi od 100zł do 150zł i jest ustalana po dokładnym wywiadzie
-        dotyczącym stanu zdrowia i celów treningowych.
+        wzmocnić słabe ogniwa oraz spalić jak największą ilość tkanki
+        tłuszczowej. Trening trwa około 60 minut, w takim czasie jesteśmy w
+        stanie wykonać odpowednią pracę przybliżającą cię do założonego celu.
+        Cena treningu wynosi od 100zł do 150zł i jest ustalana po dokładnym
+        wywiadzie dotyczącym stanu zdrowia i celów treningowych.
       </StyledText>
     )}
   </>

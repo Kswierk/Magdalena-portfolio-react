@@ -18,18 +18,17 @@ const CardWraper = styled.div`
 `;
 
 const MadziaImg = styled.div`
-  background: url(${madzia}) no-repeat center center;
+  background: url(${madzia}) no-repeat center -50px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 55vh;
 `;
 const KacperImg = styled.div`
   background: url(${kacper}) no-repeat center top;
@@ -37,13 +36,13 @@ const KacperImg = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  min-height: 50vh;
+  max-height: 65vh;
+  min-height: 65vh;
 `;
 
 const TrainerName = styled.p`

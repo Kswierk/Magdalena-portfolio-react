@@ -11,42 +11,14 @@ const TextWraper = styled.div`
   margin: 20px 10px;
 `;
 
-const TrainerText = () => (
+const trainerText = [
+  "Jest certyfikowanym trenerem personalnym z wieloletnim doświadczeniem. Pasję do sportu odkrył już w szkole podstawowej zaczynając od pływania, co w późniejszych latach zaprowadziło go do treningu siłowego. Po kilku latach zagłębiania się w zagadnienia treningowe oraz dietetyczne stwierdził, że juz pora usystematyzować wiedzę na kursach tematycznych. Zdobywanie wiedzy poskutkowało znalezieniem pracy w zawodzie i dalszym zdobywaniu doświadczenia przy wymagających podopiecznych. Największą motywacją jest dla niego świadomość jak dużą wartość potrafi wnieść odpowiednia aktywność fizyczna dostosowana do indywidualnych predyspozycji oraz potrzeb. Jego podejście do treningu bazuje na treningu funcjonalnym, zawierającym wzorce ruchowe wykorzystywane w życiu codziennym, a są one indywidualne dla każdego z osobna. Zależy mu na elastycznym podejsciu tak, aby dla każdego znaleźć odpowiedni typ ćwiczeń oraz nawyków aktywnościowych w ciągu dnia codziennego. Wierzy w holistyczne podejście do fitnessu, dopasowująć odpowiednie ćwiczenia i programy, które poprawiają siłę, wytrzymałość oraz balans dla kompletnego zajęcia się ciałem pod względem aktywności fizycznej. Najważniejszym aspektem jest dla niego dostarczanie pozytywnych i satysfakcjonujących doświadczeń treningowych. Jest to kluczowe w dążeniu do długofalowych zmian w aktywności fizycznej oraz przezwyciężaniu swoich słabości.",
+  "Nazywam się Magdalena Dżugan i jestem trenerką personalną. W 2018 roku ukończyłam kurs trenera personalnego, lecz w siłownią jestem związana już od czasów szkolnych. Obecnie studiuję na Akademii Wychowania Fizycznego oraz biorę udział w licznych kursach dotyczących treningu i żywienia, aby zdobyta wiedza przełożyła się na Twoje ekety treningowe, zdrowie i samopoczucie. Specjalizuję się w treningu sylwetkowym, prozdrowotnym, a także rehablitacji wad postawy. Lubię pracować z kobietami, ponieważ w pełni rozumiem ich potrzeby. Dzięki temu sprawiam, że na siłowni czują się komfortowo i pewne siebie.",
+];
+
+const TrainerText = (props) => (
   <StyledText>
-    <TextWraper>
-      <p>
-        As a Temple University alumni, Noelle gained her admiration for personal
-        training after competing in Division 1 collegiate track and field where
-        she set the new record in the 1000 meters. Noelle attributes her success
-        to her coaches and her regimented body-specific training program. Her
-        favorite over-used hash-tag is #nodaysoff because as her success has
-        taught her; to become the best you can be, you must commit yourself to
-        do the work when others won’t. This is the training philosophy she still
-        uses today. Her training program is designed as a lifestyle approach to
-        exercise. There is no end goal, because there is no end point, life will
-        go on. As we master the workout in front of us, we then must level up to
-        our new and improved selves so that we can continue to live our best
-        lives. Like in her former track days, Noelle’s training program focuses
-        on both fast and slow-twitch muscle development by using weight training
-        for muscular strength and endurance.
-      </p>
-      <p>
-        She couples this with yoga, which helps with toning and the elasticity
-        of the muscles. Her background in dance is also apparent in the
-        creativity and grace of her movements, which engage parts of the body
-        you aren’t used to working. Each of her workouts incorporate a
-        combination of total-body work and isolation movements. With 10+ years
-        of experience in NYC as an ACE certified personal trainer and a
-        reputation for being a hard-ass and a supportive motivator in the gym,
-        Noelle is known for getting the job done in whatever capacity you need.
-        She was recently named one of Men’s Health top picks for women who could
-        100% kick your ass! Her celebrity clients include Jenn Hyman, Founder of
-        Rent the Runway and former Rockette, Mandy Evans-Brown. Noelle also has
-        a long-standing roster of clients who joined the Leading Edge movement
-        in its infant stages, and years later are still getting their booty
-        kicked under her supervision.
-      </p>
-    </TextWraper>
+    <TextWraper>{props.madzia ? trainerText[1] : trainerText[0]}</TextWraper>
   </StyledText>
 );
 

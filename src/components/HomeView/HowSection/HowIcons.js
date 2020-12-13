@@ -28,10 +28,10 @@ const IconContent = [
 
 const StyledImg = styled.img`
   display: block;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 150px;
   height: 150px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   margin-bottom: 20px;
 
   @media (min-width: 1024px) {

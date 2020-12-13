@@ -117,7 +117,7 @@ export default function ContactUs() {
           <Form className="contact-form" onSubmit={sendEmail}>
             <StyledLabel>Imię</StyledLabel>
             <Input required type="text" name="user_name" />
-            <StyledLabel>Numer</StyledLabel>
+            <StyledLabel>Numer telefonu</StyledLabel>
             <Input required type="number" name="contact_number" />
             <StyledLabel>Adres E-mail</StyledLabel>
             <Input required type="email" name="user_email" />

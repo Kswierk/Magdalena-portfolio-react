@@ -12,16 +12,17 @@ const StandardBtn = styled.button`
   display: block;
   outline: none;
   /* border: none; */
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 50px;
   text-transform: uppercase;
   font-weight: 500;
   z-index: 50;
+  margin: 4rem;
 
   @media (min-width: 1024px) {
-    padding: 1.5rem 2.5rem;
+    padding: 1.2rem 2.2rem;
     font-size: 0.9rem;
   }
   @media (min-width: 2560px) {

@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.h2`
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  margin: 80px 40px;
+  margin: 60px 40px;
 
   &:after {
     content: "";

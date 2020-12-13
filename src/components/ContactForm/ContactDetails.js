@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wraper = styled.div`
   background-color: #fff;
-  border: 1px solid lightgray;
+  border-radius: 10px;
   text-align: center;
   text-transform: uppercase;
   width: 90%;

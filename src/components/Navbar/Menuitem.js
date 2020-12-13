@@ -7,17 +7,22 @@ const NavMenu = styled.ul`
   position: absolute;
   left: ${(props) => (props.alter ? "-100%" : "0")};
   top: 59px;
-  width: 100%;
+  width: 60%;
+  height: calc(100vh - 59px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   transition: ${(props) => (props.alter ? "0" : "all .8s ease")};
   z-index: 100;
   background-color: #1a1c20;
   margin-right: 80px;
 
   @media (min-width: 992px) {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     left: 0;
     top: 0;
+    height: 100%;
     position: relative;
     background-color: transparent;
   }
@@ -29,9 +34,6 @@ const NavLi = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  padding: 20px 0px;
-  margin: 20px 0;
   text-transform: uppercase;
 
   @media (min-width: 992px) {
@@ -59,9 +61,7 @@ const StyledLink = styled(NavLink)`
 const NavBurger = styled.div`
   position: absolute;
   z-index: 100;
-  /* top: 15px; */
-  /* transform: translateY(-50%); */
-  right: 50px;
+  right: 3%;
   cursor: pointer;
 
   @media (min-width: 992px) {
